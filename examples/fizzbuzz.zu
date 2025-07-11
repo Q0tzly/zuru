@@ -1,0 +1,7 @@
+fizzbuzz Int String = {
+	&1 % 3 : "Fizz" +
+	&1 % 5 : "Buzz" +
+	_ : String.from &1
+}
+
+@main IO = 0 .. 100 : @putln fizzbuzz
